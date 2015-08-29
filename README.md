@@ -8,14 +8,15 @@ According to URL to get the site favicon.
 .
 ├── LICENSE
 ├── README.md
-├── Get_favicon.class.php
-└── index.php
+└── Get_favicon.class.php
 ```
 
 ## Demo
 
 ```
-index.php
+require 'Get_favicon.class.php';
+$get_favicon = new Get_favicon;
+$get_favicon->get($_REQUEST['u'], $_REQUEST['a']);
 ```
 
 ## Test
